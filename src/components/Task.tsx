@@ -23,7 +23,7 @@ export default function Task({
         />
         <span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
       </label>
-      <label htmlFor={`title-${id}`} aria-label={title} className="title">
+      <label htmlFor={`title-${id}`} aria-label={title} className="title" style={{ fontSize: '20px' }}>
         <input
           type="text"
           value={title}
@@ -31,6 +31,7 @@ export default function Task({
           name="title"
           id={`title-${id}`}
           placeholder="Input title"
+          style={{ backgroundColor: 'red' }}
         />
       </label>
       {state !== "TASK_ARCHIVED" && (
