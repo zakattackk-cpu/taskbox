@@ -12,7 +12,7 @@ export default function Task({
   onPinTask,
 }: TaskProps) {
   return (
-    <div className={`list-item ${state}`}>
+    <div className={'list-item ${state}'} style={{ backgroundColor: 'blue', color: 'white' }}>
       <label htmlFor={`archiveTask-${id}`} aria-label={`archiveTask-${id}`} className="checkbox">
         <input
           type="checkbox"
