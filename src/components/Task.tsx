@@ -23,7 +23,7 @@ export default function Task({
         />
         <span className="checkbox-custom" onClick={() => onArchiveTask(id)} />
       </label>
-      <label htmlFor={`title-${id}`} aria-label={title} className="title" style={{ fontSize: '20px' }}>
+      <label htmlFor={`title-${id}`} aria-label={title} className="title" style={{ fontSize: '28px' }}>
         <input
           type="text"
           value={title}
